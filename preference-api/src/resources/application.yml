@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+  application:
+    name: preferences
+
+server:
+  port: 8080
+
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
+logging:
+  level:
+    org.springframework.cloud.consul: DEBUG
